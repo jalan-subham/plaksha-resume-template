@@ -1,0 +1,80 @@
+%-------------------------%
+% Custom commands
+
+\definecolor{teal}{RGB}{0, 120, 120}
+
+\newcommand{\name}[2]{
+\begin{flushleft}\textbf{\color{teal} \Huge  \href{#1}{#2}} \end{flushleft}
+}
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-4pt}}
+  }
+}
+\newcommand{\posItem}[1]{
+  \small{
+    {#1 \vspace{-4pt}}
+  }
+}
+
+\newcommand{\achItem}[1]{
+  \item\small{
+    {#1 \vspace{-7pt}}
+  }
+}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\educationSubheading}[3]{
+\vspace{-2pt}\item
+  \begin{tabular}{p{0.7\textwidth} >{\raggedleft}p{0.2\textwidth} >{\raggedleft}p{0.1\textwidth}}
+    #1 & #3 & #2 \\
+  \end{tabular}\vspace{-20pt}
+}
+
+\newcommand{\expSubheading}[2]{
+\item
+  \begin{tabular}{p{0.7\textwidth} >{\raggedleft}p{0.3\textwidth}}
+    #1 & #2 \\
+  \end{tabular}\vspace{-20pt}
+}
+\newcommand{\posSubheading}[2]{
+\item
+  \begin{tabular}{p{0.7\textwidth} >{\raggedleft}p{0.3\textwidth}}
+    #1 & \small{#2} \\
+  \end{tabular}\vspace{-10pt}
+}
+
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.13in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\definecolor{Black}{RGB}{0, 0, 0}
+\newcommand{\seticon}[1]{\textcolor{Black}{#1\endcsname}}

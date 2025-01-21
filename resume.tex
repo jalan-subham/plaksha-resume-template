@@ -1,0 +1,93 @@
+%-------------------------
+% Resume in Latex
+% Author : Subham Jalan
+%------------------------
+
+\documentclass[letterpaper,9pt]{article}
+
+\usepackage{fontawesome5}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+% \input{glyphtounicode}
+\usepackage{fontspec}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\usepackage{tikz}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\Large
+}{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
+
+\setmainfont[
+Extension = .ttf,
+  UprightFont = fonts/*-Regular,
+  BoldFont = fonts/*-Bold.ttf,
+  ItalicFont = fonts/*-Italic.ttf,
+  BoldItalicFont = fonts/*-BoldItalic.ttf
+]{Calibri}
+
+\begin{document}
+\include{custom-commands}
+
+%-------------------------------------------%
+%%%%%%  RESUME STARTS HERE  %%%%%
+
+%----------HEADING----------%
+\input{src/heading}
+\begin{tikzpicture}[remember picture, overlay]
+    \node[anchor=north east, xshift=-1cm, yshift=-1cm] at (current page.north east) {
+        \includegraphics[width=5cm]{plaksha}
+    };
+\end{tikzpicture}
+
+%-----------EDUCATION-----------%
+\input{src/education.tex}
+
+%-----------EXPERIENCE-----------%
+\input{src/experience}
+
+%-----------PROJECTS-----------%
+\input{src/projects}
+
+%-----------EXTRACURRICULAR-----------%
+\input{src/pos}
+
+%-----------SKILLS-----------%
+\input{src/skills}
+
+%---------ACHIEVEMNTS-----------------%
+\input{src/ach}
+
+%-------------------------------------------%
+\end{document}
+
